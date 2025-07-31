@@ -1,0 +1,255 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    color: #000000;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #d32f2f; /* Red focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.4);
+}
+
+/* Validation Error Styling */
+.validation-error {
+    color: #d32f2f;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block; /* Make it visible */
+    height: 1em; /* Reserve space to prevent layout shifts */
+}
+
+
+/* Buttons */
+.btn {
+    background-color: #d32f2f; /* Red button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #a72626; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    color: #d32f2f; /* Red links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error/Success Messages */
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.error {
+    background-color: #ffcdd2; /* Light red */
+    color: #d32f2f; /* Dark red */
+    border: 1px solid #d32f2f;
+}
+
+.success {
+    background-color: #f1f1f1; /* Light gray */
+    color: #000000; /* Black */
+    border: 1px solid #000000;
+}
+
+/* Polling Section */
+#poll-section, #results-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.poll-option {
+    margin-bottom: 10px;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poll-option label {
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.result-bar-container {
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.result-bar {
+    background-color: #d32f2f; /* Red result bar */
+    height: 22px;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 8px;
+    line-height: 22px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header a {
+    background-color: #212121; /* Black button */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.dashboard-header a:hover {
+    background-color: #000;
+    text-decoration: none;
+}
+
+/* --- For the new dashboard poll list --- */
+.poll-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.poll-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-left: 5px solid #d32f2f; /* Red accent */
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poll-question {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.poll-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.voted-status {
+    font-weight: bold;
+    color: #2b8a3e;
+    font-size: 0.9em;
+}
+
+.btn-view {
+    background-color: #212121;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn-view:hover {
+    background-color: #000;
+    text-decoration: none;
+}
+
+/* For the all_results.php page */
+.results-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
